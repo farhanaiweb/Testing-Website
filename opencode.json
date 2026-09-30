@@ -1,0 +1,18 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "nararouter": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "NaraRouter",
+      "options": {
+        "baseURL": "https://router.bynara.id/v1",
+        "apiKey": "sk-nry-82Sr7L_JQuRNJyW-yWrA7w9jzzVx5MZncxRJ9_u9Pi8"
+      },
+      "models": {
+        "longcat-2.5": {
+          "name": "LongCat 2.5"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-charcoal-950 text-cream-100 font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-gold-500/30 text-cream-50;
+  }
+}
+
+@layer components {
+  .container-wide {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-narrow {
+    @apply mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm bg-gold-500 px-8 py-4 text-sm font-semibold uppercase tracking-widest text-charcoal-950 transition-all duration-300 hover:bg-gold-400 hover:shadow-lg hover:shadow-gold-500/20 focus:outline-none focus:ring-2 focus:ring-gold-400 focus:ring-offset-2 focus:ring-offset-charcoal-950;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm border border-cream-100/20 px-8 py-4 text-sm font-semibold uppercase tracking-widest text-cream-100 transition-all duration-300 hover:border-gold-500 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-400 focus:ring-offset-2 focus:ring-offset-charcoal-950;
+  }
+
+  .section-padding {
+    @apply py-20 sm:py-28 lg:py-36;
+  }
+
+  .heading-xl {
+    @apply font-serif text-4xl leading-tight sm:text-5xl lg:text-6xl;
+  }
+
+  .heading-lg {
+    @apply font-serif text-3xl leading-tight sm:text-4xl lg:text-5xl;
+  }
+
+  .heading-md {
+    @apply font-serif text-2xl leading-tight sm:text-3xl;
+  }
+
+  .text-body {
+    @apply text-base leading-relaxed text-cream-100/70 sm:text-lg;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
