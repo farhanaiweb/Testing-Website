@@ -19,19 +19,19 @@ export default function MenuPreview() {
           {featuredItems.map((item, index) => (
             <div
               key={`${item.category}-${item.name}`}
-              className="group rounded-sm border border-cream-100/10 bg-charcoal-950/50 p-6 transition-all duration-300 hover:border-gold-500/30 hover:bg-charcoal-950"
+              className="group rounded-sm border border-cream-100/10 bg-charcoal-950/50 p-6 transition-all duration-300 hover:border-red-500/30 hover:bg-charcoal-950"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <p className="text-xs font-semibold uppercase tracking-widest text-gold-400">
+              <p className="text-xs font-semibold uppercase tracking-widest text-red-500">
                 {item.category}
               </p>
-              <h3 className="mt-2 font-serif text-xl text-cream-50 transition-colors group-hover:text-gold-400">
+              <h3 className="mt-2 font-serif text-xl text-cream-50 transition-colors group-hover:text-red-400">
                 {item.name}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-cream-100/60">
                 {item.description}
               </p>
-              <p className="mt-4 font-serif text-lg text-gold-400">{item.price}</p>
+              <p className="mt-4 font-serif text-lg text-red-500">{item.price}</p>
             </div>
           ))}
         </div>

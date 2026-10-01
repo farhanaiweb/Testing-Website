@@ -7,7 +7,7 @@ function StarRating({ rating }: { rating: number }) {
       {Array.from({ length: 5 }).map((_, i) => (
         <svg
           key={i}
-          className={`h-4 w-4 ${i < rating ? 'text-gold-400' : 'text-cream-100/20'}`}
+          className={`h-4 w-4 ${i < rating ? 'text-red-500' : 'text-cream-100/20'}`}
           fill="currentColor"
           viewBox="0 0 20 20"
           aria-hidden="true"
@@ -33,7 +33,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="flex flex-col rounded-sm border border-cream-100/10 bg-charcoal-950/50 p-8 transition-all duration-300 hover:border-gold-500/30"
+              className="flex flex-col rounded-sm border border-cream-100/10 bg-charcoal-950/50 p-8 transition-all duration-300 hover:border-red-500/30"
             >
               <StarRating rating={testimonial.rating} />
               <blockquote className="mt-4 flex-1">

@@ -11,13 +11,13 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
     <div className="border-b border-cream-100/10">
       <button
         type="button"
-        className="flex w-full items-center justify-between py-6 text-left transition-colors hover:text-gold-400 focus:outline-none focus:text-gold-400"
+        className="flex w-full items-center justify-between py-6 text-left transition-colors hover:text-red-400 focus:outline-none focus:text-red-400"
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
       >
         <span className="font-serif text-lg text-cream-50 sm:text-xl">{question}</span>
         <svg
-          className={`ml-4 h-5 w-5 flex-shrink-0 text-gold-400 transition-transform duration-300 ${
+          className={`ml-4 h-5 w-5 flex-shrink-0 text-red-500 transition-transform duration-300 ${
             isOpen ? 'rotate-180' : ''
           }`}
           fill="none"

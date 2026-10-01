@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 interface SectionHeadingProps {
   eyebrow?: string
   title: string
@@ -20,7 +18,7 @@ export default function SectionHeading({
   return (
     <div className={`max-w-2xl ${alignClass} ${className}`}>
       {eyebrow && (
-        <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-gold-400">
+        <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-red-500">
           {eyebrow}
         </p>
       )}

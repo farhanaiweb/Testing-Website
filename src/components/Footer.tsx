@@ -21,7 +21,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-widest text-gold-400">
+            <h3 className="text-sm font-semibold uppercase tracking-widest text-red-500">
               Quick Links
             </h3>
             <ul className="mt-4 space-y-3">
@@ -40,7 +40,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-widest text-gold-400">
+            <h3 className="text-sm font-semibold uppercase tracking-widest text-red-500">
               Contact
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-cream-100/70">
@@ -71,7 +71,7 @@ export default function Footer() {
 
           {/* Hours */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-widest text-gold-400">
+            <h3 className="text-sm font-semibold uppercase tracking-widest text-red-500">
               Hours
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-cream-100/70">

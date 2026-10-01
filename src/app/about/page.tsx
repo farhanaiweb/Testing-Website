@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import SectionHeading from '@/components/SectionHeading'
 import CTASection from '@/components/CTASection'
-import { heroImages } from '@/lib/data'
 
 export const metadata: Metadata = {
   title: 'About Us',
@@ -14,17 +13,9 @@ export default function AboutPage() {
     <>
       {/* Hero */}
       <section className="relative flex min-h-[60vh] items-center justify-center overflow-hidden pt-20">
-        <div className="absolute inset-0">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1920&q=80&auto=format&fit=crop"
-            alt="Restaurant interior with elegant decor"
-            className="h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-charcoal-950/80 via-charcoal-950/60 to-charcoal-950" />
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-charcoal-950 via-red-950/30 to-charcoal-950" />
         <div className="container-wide relative z-10 text-center">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-gold-400">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-red-400">
             Our Story
           </p>
           <h1 className="heading-xl text-cream-50">About Haveli Restaurant</h1>
@@ -54,9 +45,9 @@ export default function AboutPage() {
                 </p>
                 <p>
                   When the Punjab government announced its intention to develop a Food Street
-                  on Fort Road in 2010, Habib Khan voluntarily assisted in the project execution
-                  and helped in delivering a unique dining experience that celebrates Lahore's
-                  culinary and architectural heritage.
+                  on Fort Road in 2010, Habib Khan voluntarily assisted in the project execution,
+                  helping deliver a dining experience that celebrates Lahore's culinary and
+                  architectural heritage.
                 </p>
                 <p>
                   From the moment you walk through our doors, we want you to feel the warmth
@@ -69,12 +60,12 @@ export default function AboutPage() {
             <div className="relative">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={heroImages.secondary}
+                src="/images/haveli-1.jpg"
                 alt="Elegant table setting in our dining room"
                 className="aspect-[4/3] w-full rounded-sm object-cover"
                 loading="lazy"
               />
-              <div className="absolute -bottom-6 -left-6 -z-10 h-full w-full rounded-sm border border-gold-500/20" />
+              <div className="absolute -bottom-6 -left-6 -z-10 h-full w-full rounded-sm border border-red-500/20" />
             </div>
           </div>
         </div>
@@ -92,12 +83,12 @@ export default function AboutPage() {
               {
                 title: 'Heritage & Architecture',
                 description:
-                  'We source the finest ingredients from local farmers and producers, ensuring every dish reflects the best of each season.',
+                  'We are proud to preserve the historic Haveli Khalil Khan, maintaining its original Mughal-era architecture while creating a world-class dining experience.',
               },
               {
-                title: 'Craft & Care',
+                title: 'Authentic Lahori Cuisine',
                 description:
-                  'Every plate is prepared with meticulous attention to detail, from the initial preparation to the final presentation.',
+                  'Our menu celebrates the rich culinary traditions of Lahore, using time-honored recipes and the finest local ingredients.',
               },
               {
                 title: 'Warm Hospitality',
@@ -122,9 +113,9 @@ export default function AboutPage() {
             ].map((value, index) => (
               <div
                 key={index}
-                className="rounded-sm border border-cream-100/10 bg-charcoal-950/50 p-8 transition-all duration-300 hover:border-gold-500/30"
+                className="rounded-sm border border-cream-100/10 bg-charcoal-950/50 p-8 transition-all duration-300 hover:border-red-500/30"
               >
-                <h3 className="font-serif text-xl text-gold-400">{value.title}</h3>
+                <h3 className="font-serif text-xl text-red-500">{value.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-cream-100/70">
                   {value.description}
                 </p>

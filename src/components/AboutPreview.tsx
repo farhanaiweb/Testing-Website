@@ -1,5 +1,4 @@
 import SectionHeading from './SectionHeading'
-import { heroImages } from '@/lib/data'
 
 export default function AboutPreview() {
   return (
@@ -12,8 +11,8 @@ export default function AboutPreview() {
               <div className="space-y-4">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={heroImages.secondary}
-                  alt="Restaurant interior with warm ambient lighting"
+                  src="/images/haveli-1.jpg"
+                  alt="Haveli Restaurant interior with warm ambient lighting"
                   className="aspect-[3/4] w-full rounded-sm object-cover"
                   loading="lazy"
                 />
@@ -21,7 +20,7 @@ export default function AboutPreview() {
               <div className="space-y-4 pt-8">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={heroImages.tertiary}
+                  src="/images/haveli-2.jpg"
                   alt="Chef preparing a dish in the kitchen"
                   className="aspect-[3/4] w-full rounded-sm object-cover"
                   loading="lazy"
@@ -29,7 +28,7 @@ export default function AboutPreview() {
               </div>
             </div>
             {/* Decorative Element */}
-            <div className="absolute -bottom-6 -right-6 -z-10 h-full w-full rounded-sm border border-gold-500/20" />
+            <div className="absolute -bottom-6 -right-6 -z-10 h-full w-full rounded-sm border border-red-500/20" />
           </div>
 
           {/* Content */}
@@ -56,19 +55,19 @@ export default function AboutPreview() {
 
             <div className="mt-8 grid grid-cols-3 gap-6 border-t border-cream-100/10 pt-8">
               <div>
-                <p className="font-serif text-3xl text-gold-400 sm:text-4xl">2010</p>
+                <p className="font-serif text-3xl text-red-500 sm:text-4xl">2010</p>
                 <p className="mt-1 text-xs uppercase tracking-widest text-cream-100/60">
                   Food Street Established
                 </p>
               </div>
               <div>
-                <p className="font-serif text-3xl text-gold-400 sm:text-4xl">1</p>
+                <p className="font-serif text-3xl text-red-500 sm:text-4xl">1</p>
                 <p className="mt-1 text-xs uppercase tracking-widest text-cream-100/60">
                   Historic Haveli
                 </p>
               </div>
               <div>
-                <p className="font-serif text-3xl text-gold-400 sm:text-4xl">3</p>
+                <p className="font-serif text-3xl text-red-500 sm:text-4xl">3</p>
                 <p className="mt-1 text-xs uppercase tracking-widest text-cream-100/60">
                   Iconic Landmarks Nearby
                 </p>

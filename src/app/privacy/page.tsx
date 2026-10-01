@@ -65,7 +65,7 @@ export default function PrivacyPage() {
             <h2 className="font-serif text-xl text-cream-50">Contact Us</h2>
             <p className="mt-3">
               If you have any questions about this Privacy Policy, please contact us at{' '}
-              <a href="mailto:info@haveli.com.pk" className="text-gold-400 hover:underline">
+              <a href="mailto:info@haveli.com.pk" className="text-red-500 hover:underline">
                 info@haveli.com.pk
               </a>
               .

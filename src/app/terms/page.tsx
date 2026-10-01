@@ -62,9 +62,8 @@ export default function TermsPage() {
           <div>
             <h2 className="font-serif text-xl text-cream-50">Governing Law</h2>
             <p className="mt-3">
-              These terms shall be governed by and construed in accordance with the laws of the
-              state in which our restaurant operates, without regard to its conflict of law
-              provisions.
+              These terms shall be governed by and construed in accordance with the laws of
+              Pakistan, without regard to its conflict of law provisions.
             </p>
           </div>
 
@@ -72,7 +71,7 @@ export default function TermsPage() {
             <h2 className="font-serif text-xl text-cream-50">Contact</h2>
             <p className="mt-3">
               For questions about these Terms &amp; Conditions, please contact us at{' '}
-              <a href="mailto:info@haveli.com.pk" className="text-gold-400 hover:underline">
+              <a href="mailto:info@haveli.com.pk" className="text-red-500 hover:underline">
                 info@haveli.com.pk
               </a>
               .

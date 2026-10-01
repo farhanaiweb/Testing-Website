@@ -8,14 +8,14 @@ export default function CTASection() {
         <div
           className="h-full w-full"
           style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(212, 149, 46, 0.5) 1px, transparent 0)`,
+            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(220, 38, 38, 0.5) 1px, transparent 0)`,
             backgroundSize: '40px 40px',
           }}
         />
       </div>
 
       <div className="container-narrow relative z-10 text-center">
-        <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-gold-400">
+        <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-red-500">
           Reserve Your Experience
         </p>
         <h2 className="heading-lg text-cream-50">

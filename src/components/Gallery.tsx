@@ -1,5 +1,4 @@
 import SectionHeading from './SectionHeading'
-import { galleryImages } from '@/lib/data'
 
 export default function Gallery() {
   return (
@@ -12,17 +11,17 @@ export default function Gallery() {
         />
 
         <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-3">
-          {galleryImages.map((image, index) => (
+          {[1, 2, 3, 4, 5, 6].map((index) => (
             <div
               key={index}
               className={`group relative overflow-hidden rounded-sm ${
-                index === 0 || index === 5 ? 'row-span-2 aspect-[3/4]' : 'aspect-square'
+                index === 1 || index === 6 ? 'row-span-2 aspect-[3/4]' : 'aspect-square'
               }`}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={image.src}
-                alt={image.alt}
+                src={`/images/gallery-${index}.jpg`}
+                alt={`Haveli Restaurant gallery image ${index}`}
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                 loading="lazy"
               />

@@ -32,15 +32,7 @@ export default function Header() {
     >
       <div className="container-wide">
         <nav className="flex items-center justify-between py-4 sm:py-5" aria-label="Main navigation">
-          {/* Logo */}
-          <Link
-            href="/"
-            className="font-serif text-xl tracking-wider text-cream-50 transition-colors hover:text-gold-400 sm:text-2xl"
-          >
-            {restaurantInfo.name}
-          </Link>
-
-          {/* Desktop Navigation */}
+          {/* Navigation Links - Left Side */}
           <ul className="hidden items-center gap-8 md:flex lg:gap-12">
             {navLinks.map((link) => (
               <li key={link.href}>
@@ -48,7 +40,7 @@ export default function Header() {
                   href={link.href}
                   className={`text-sm font-medium uppercase tracking-widest transition-colors duration-300 ${
                     pathname === link.href
-                      ? 'text-gold-400'
+                      ? 'text-red-500'
                       : 'text-cream-100/80 hover:text-cream-50'
                   }`}
                 >
@@ -56,12 +48,27 @@ export default function Header() {
                 </Link>
               </li>
             ))}
-            <li>
-              <Link href="/contact" className="btn-primary !px-6 !py-3 !text-xs">
-                Reserve
-              </Link>
-            </li>
           </ul>
+
+          {/* Logo - Right Side */}
+          <Link href="/" className="flex items-center gap-3">
+            <span className="font-serif text-xl tracking-wider text-cream-50 transition-colors hover:text-red-400 sm:text-2xl">
+              {restaurantInfo.name}
+            </span>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logo.webp"
+              alt="Haveli Restaurant Logo"
+              className="h-10 w-auto sm:h-12"
+            />
+          </Link>
+
+          {/* Reserve Button - Desktop */}
+          <div className="hidden md:block">
+            <Link href="/contact" className="btn-primary !px-6 !py-3 !text-xs">
+              Reserve
+            </Link>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -108,7 +115,7 @@ export default function Header() {
                   ? 'translate-y-0 opacity-100'
                   : 'translate-y-4 opacity-0'
               } ${
-                pathname === link.href ? 'text-gold-400' : 'text-cream-50 hover:text-gold-400'
+                pathname === link.href ? 'text-red-500' : 'text-cream-50 hover:text-red-400'
               }`}
               style={{ transitionDelay: `${index * 100 + 200}ms` }}
             >

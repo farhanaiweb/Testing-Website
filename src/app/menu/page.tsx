@@ -14,17 +14,9 @@ export default function MenuPage() {
     <>
       {/* Hero */}
       <section className="relative flex min-h-[60vh] items-center justify-center overflow-hidden pt-20">
-        <div className="absolute inset-0">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&q=80&auto=format&fit=crop"
-            alt="Beautifully plated dishes on a table"
-            className="h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-charcoal-950/80 via-charcoal-950/60 to-charcoal-950" />
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-charcoal-950 via-red-950/30 to-charcoal-950" />
         <div className="container-wide relative z-10 text-center">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-gold-400">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-red-400">
             Our Menu
           </p>
           <h1 className="heading-xl text-cream-50">Authentic Lahori Cuisine</h1>
@@ -48,13 +40,13 @@ export default function MenuPage() {
                 {category.items.map((item) => (
                   <div
                     key={item.name}
-                    className="group rounded-sm border border-cream-100/10 bg-charcoal-900/30 p-6 transition-all duration-300 hover:border-gold-500/30"
+                    className="group rounded-sm border border-cream-100/10 bg-charcoal-900/30 p-6 transition-all duration-300 hover:border-red-500/30"
                   >
                     <div className="flex items-start justify-between gap-4">
-                      <h3 className="font-serif text-xl text-cream-50 transition-colors group-hover:text-gold-400">
+                      <h3 className="font-serif text-xl text-cream-50 transition-colors group-hover:text-red-400">
                         {item.name}
                       </h3>
-                      <span className="flex-shrink-0 font-serif text-lg text-gold-400">
+                      <span className="flex-shrink-0 font-serif text-lg text-red-500">
                         {item.price}
                       </span>
                     </div>

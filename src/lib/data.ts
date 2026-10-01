@@ -30,35 +30,35 @@ export const navLinks = [
 ]
 
 export const heroImages = {
-  main: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80&auto=format&fit=crop',
-  secondary: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80&auto=format&fit=crop',
-  tertiary: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80&auto=format&fit=crop',
+  main: '/images/hero.jpg',
+  secondary: '/images/haveli-1.jpg',
+  tertiary: '/images/haveli-2.jpg',
 }
 
 export const galleryImages = [
   {
-    src: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80&auto=format&fit=crop',
-    alt: 'Grilled steak with herbs',
+    src: '/images/gallery-1.jpg',
+    alt: 'Haveli Restaurant interior',
   },
   {
-    src: 'https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=600&q=80&auto=format&fit=crop',
-    alt: 'Fresh pasta dish',
+    src: '/images/gallery-2.jpg',
+    alt: 'Authentic Lahori cuisine',
   },
   {
-    src: 'https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&q=80&auto=format&fit=crop',
-    alt: 'Artfully plated dessert',
+    src: '/images/gallery-3.jpg',
+    alt: 'Heritage architecture',
   },
   {
-    src: 'https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=600&q=80&auto=format&fit=crop',
-    alt: 'Craft cocktail with garnish',
+    src: '/images/gallery-4.jpg',
+    alt: 'Dining experience',
   },
   {
-    src: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80&auto=format&fit=crop',
-    alt: 'Fresh salad bowl',
+    src: '/images/gallery-5.jpg',
+    alt: 'Haveli ambience',
   },
   {
-    src: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80&auto=format&fit=crop',
-    alt: 'Wood-fired pizza',
+    src: '/images/gallery-6.jpg',
+    alt: 'Lahore heritage',
   },
 ]
 
@@ -177,7 +177,7 @@ export const testimonials = [
     name: 'James K.',
     role: 'Food Critic',
     quote:
-      'SAVOR & CO. delivers on every front — innovative dishes, impeccable service, and a wine list that complements the menu beautifully.',
+      'Haveli Restaurant delivers on every front — innovative dishes, impeccable service, and a wine list that complements the menu beautifully.',
     rating: 5,
   },
   {

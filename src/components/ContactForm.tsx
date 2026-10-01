@@ -86,9 +86,9 @@ export default function ContactForm() {
 
   if (isSubmitted) {
     return (
-      <div className="flex flex-col items-center justify-center rounded-sm border border-gold-500/30 bg-charcoal-900/50 p-12 text-center">
-        <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-gold-500/20">
-          <svg className="h-8 w-8 text-gold-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <div className="flex flex-col items-center justify-center rounded-sm border border-red-500/30 bg-charcoal-900/50 p-12 text-center">
+        <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-red-500/20">
+          <svg className="h-8 w-8 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
         </div>
@@ -118,15 +118,15 @@ export default function ContactForm() {
         {/* Name */}
         <div>
           <label htmlFor="name" className="mb-2 block text-sm font-medium text-cream-100/80">
-            Full Name <span className="text-gold-400">*</span>
+            Full Name <span className="text-red-500">*</span>
           </label>
           <input
             type="text"
             id="name"
             value={formData.name}
             onChange={(e) => handleChange('name', e.target.value)}
-            className={`w-full rounded-sm border bg-charcoal-900/50 px-4 py-3 text-cream-50 placeholder-cream-100/30 transition-colors focus:outline-none focus:ring-2 focus:ring-gold-400 ${
-              errors.name ? 'border-red-500' : 'border-cream-100/20 focus:border-gold-500'
+            className={`w-full rounded-sm border bg-charcoal-900/50 px-4 py-3 text-cream-50 placeholder-cream-100/30 transition-colors focus:outline-none focus:ring-2 focus:ring-red-500 ${
+              errors.name ? 'border-red-500' : 'border-cream-100/20 focus:border-red-500'
             }`}
             placeholder="John Smith"
             aria-invalid={!!errors.name}
@@ -142,15 +142,15 @@ export default function ContactForm() {
         {/* Email */}
         <div>
           <label htmlFor="email" className="mb-2 block text-sm font-medium text-cream-100/80">
-            Email Address <span className="text-gold-400">*</span>
+            Email Address <span className="text-red-500">*</span>
           </label>
           <input
             type="email"
             id="email"
             value={formData.email}
             onChange={(e) => handleChange('email', e.target.value)}
-            className={`w-full rounded-sm border bg-charcoal-900/50 px-4 py-3 text-cream-50 placeholder-cream-100/30 transition-colors focus:outline-none focus:ring-2 focus:ring-gold-400 ${
-              errors.email ? 'border-red-500' : 'border-cream-100/20 focus:border-gold-500'
+            className={`w-full rounded-sm border bg-charcoal-900/50 px-4 py-3 text-cream-50 placeholder-cream-100/30 transition-colors focus:outline-none focus:ring-2 focus:ring-red-500 ${
+              errors.email ? 'border-red-500' : 'border-cream-100/20 focus:border-red-500'
             }`}
             placeholder="john@example.com"
             aria-invalid={!!errors.email}
@@ -166,15 +166,15 @@ export default function ContactForm() {
         {/* Phone */}
         <div>
           <label htmlFor="phone" className="mb-2 block text-sm font-medium text-cream-100/80">
-            Phone Number <span className="text-gold-400">*</span>
+            Phone Number <span className="text-red-500">*</span>
           </label>
           <input
             type="tel"
             id="phone"
             value={formData.phone}
             onChange={(e) => handleChange('phone', e.target.value)}
-            className={`w-full rounded-sm border bg-charcoal-900/50 px-4 py-3 text-cream-50 placeholder-cream-100/30 transition-colors focus:outline-none focus:ring-2 focus:ring-gold-400 ${
-              errors.phone ? 'border-red-500' : 'border-cream-100/20 focus:border-gold-500'
+            className={`w-full rounded-sm border bg-charcoal-900/50 px-4 py-3 text-cream-50 placeholder-cream-100/30 transition-colors focus:outline-none focus:ring-2 focus:ring-red-500 ${
+              errors.phone ? 'border-red-500' : 'border-cream-100/20 focus:border-red-500'
             }`}
             placeholder="+92 321 465 1051"
             aria-invalid={!!errors.phone}
@@ -190,7 +190,7 @@ export default function ContactForm() {
         {/* Date */}
         <div>
           <label htmlFor="date" className="mb-2 block text-sm font-medium text-cream-100/80">
-            Preferred Date <span className="text-gold-400">*</span>
+            Preferred Date <span className="text-red-500">*</span>
           </label>
           <input
             type="date"
@@ -198,8 +198,8 @@ export default function ContactForm() {
             value={formData.date}
             onChange={(e) => handleChange('date', e.target.value)}
             min={new Date().toISOString().split('T')[0]}
-            className={`w-full rounded-sm border bg-charcoal-900/50 px-4 py-3 text-cream-50 transition-colors focus:outline-none focus:ring-2 focus:ring-gold-400 ${
-              errors.date ? 'border-red-500' : 'border-cream-100/20 focus:border-gold-500'
+            className={`w-full rounded-sm border bg-charcoal-900/50 px-4 py-3 text-cream-50 transition-colors focus:outline-none focus:ring-2 focus:ring-red-500 ${
+              errors.date ? 'border-red-500' : 'border-cream-100/20 focus:border-red-500'
             }`}
             aria-invalid={!!errors.date}
             aria-describedby={errors.date ? 'date-error' : undefined}
@@ -214,14 +214,14 @@ export default function ContactForm() {
         {/* Guests */}
         <div className="sm:col-span-2">
           <label htmlFor="guests" className="mb-2 block text-sm font-medium text-cream-100/80">
-            Number of Guests <span className="text-gold-400">*</span>
+            Number of Guests <span className="text-red-500">*</span>
           </label>
           <select
             id="guests"
             value={formData.guests}
             onChange={(e) => handleChange('guests', e.target.value)}
-            className={`w-full rounded-sm border bg-charcoal-900/50 px-4 py-3 text-cream-50 transition-colors focus:outline-none focus:ring-2 focus:ring-gold-400 ${
-              errors.guests ? 'border-red-500' : 'border-cream-100/20 focus:border-gold-500'
+            className={`w-full rounded-sm border bg-charcoal-900/50 px-4 py-3 text-cream-50 transition-colors focus:outline-none focus:ring-2 focus:ring-red-500 ${
+              errors.guests ? 'border-red-500' : 'border-cream-100/20 focus:border-red-500'
             }`}
             aria-invalid={!!errors.guests}
             aria-describedby={errors.guests ? 'guests-error' : undefined}
@@ -251,7 +251,7 @@ export default function ContactForm() {
             value={formData.message}
             onChange={(e) => handleChange('message', e.target.value)}
             rows={4}
-            className="w-full resize-none rounded-sm border border-cream-100/20 bg-charcoal-900/50 px-4 py-3 text-cream-50 placeholder-cream-100/30 transition-colors focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-400"
+            className="w-full resize-none rounded-sm border border-cream-100/20 bg-charcoal-900/50 px-4 py-3 text-cream-50 placeholder-cream-100/30 transition-colors focus:border-red-500 focus:outline-none focus:ring-2 focus:ring-red-500"
             placeholder="Dietary restrictions, special occasions, seating preferences..."
           />
         </div>
