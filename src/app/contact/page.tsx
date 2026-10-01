@@ -6,7 +6,7 @@ import { restaurantInfo } from '@/lib/data'
 export const metadata: Metadata = {
   title: 'Contact & Reservations',
   description:
-    'Reserve your table at SAVOR & CO. Contact us for reservations, private dining, and general inquiries.',
+    'Reserve your table at Haveli Restaurant. Contact us for reservations and general inquiries.',
 }
 
 export default function ContactPage() {

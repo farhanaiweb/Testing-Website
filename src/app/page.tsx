@@ -8,9 +8,9 @@ import FAQ from '@/components/FAQ'
 import CTASection from '@/components/CTASection'
 
 export const metadata: Metadata = {
-  title: 'SAVOR & CO. | Modern Dining Experience',
+  title: 'Haveli Restaurant | Heritage Dining in Lahore',
   description:
-    'Experience modern dining at SAVOR & CO. Seasonal menus, craft cocktails, and an unforgettable atmosphere. Reserve your table today.',
+    "Lahore's premier heritage dining destination — where Mughal grandeur meets unforgettable hospitality. Located on Fort Road Food Street.",
 }
 
 export default function HomePage() {

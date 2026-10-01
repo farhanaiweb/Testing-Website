@@ -26,7 +26,7 @@ export default function Testimonials() {
         <SectionHeading
           eyebrow="Testimonials"
           title="What Our Guests Say"
-          description="Hear from those who have experienced the warmth and flavor of SAVOR & CO."
+          description="Hear from those who have experienced the heritage of Haveli Restaurant."
         />
 
         <div className="mt-16 grid gap-6 md:grid-cols-3">

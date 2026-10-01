@@ -6,7 +6,7 @@ import { heroImages } from '@/lib/data'
 export const metadata: Metadata = {
   title: 'About Us',
   description:
-    'Learn about our story, our passion for seasonal ingredients, and the team behind SAVOR & CO.',
+    'Discover the heritage of Haveli Khalil Khan, Lahore\'s iconic dining destination on Fort Road Food Street.',
 }
 
 export default function AboutPage() {
@@ -27,7 +27,7 @@ export default function AboutPage() {
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-gold-400">
             Our Story
           </p>
-          <h1 className="heading-xl text-cream-50">About SAVOR &amp; CO.</h1>
+          <h1 className="heading-xl text-cream-50">About Haveli Restaurant</h1>
           <p className="mx-auto mt-4 max-w-xl text-body">
             A celebration of flavor, hospitality, and the joy of gathering around the table.
           </p>
@@ -46,20 +46,22 @@ export default function AboutPage() {
               />
               <div className="mt-6 space-y-4 text-body">
                 <p>
-                  SAVOR & CO. was born from a simple belief: that a meal has the power to
-                  bring people together, to celebrate life&apos;s moments, and to create
-                  memories that last a lifetime.
+                  Haveli Restaurant is located in the historic Haveli Khalil Khan on Fort Road
+                  Food Street in Lahore's Walled City. The haveli itself is a unique representation
+                  of the rich heritage of Lahore, featuring wooden balconies and jharokas,
+                  hand-carved doors and windows, wrought iron railings, sun-dried flat bricks,
+                  and handmade tiles.
                 </p>
                 <p>
-                  Our chef-driven menu celebrates the finest seasonal ingredients, sourced
-                  from local farmers and artisans who share our commitment to quality and
-                  sustainability. Every dish is a reflection of our passion — thoughtfully
-                  prepared, beautifully presented, and meant to be savored.
+                  When the Punjab government announced its intention to develop a Food Street
+                  on Fort Road in 2010, Habib Khan voluntarily assisted in the project execution
+                  and helped in delivering a unique dining experience that celebrates Lahore's
+                  culinary and architectural heritage.
                 </p>
                 <p>
                   From the moment you walk through our doors, we want you to feel the warmth
-                  of genuine hospitality. Our team is dedicated to ensuring every visit is
-                  exceptional, whether you are joining us for a quick lunch, a romantic
+                  of genuine Lahori hospitality. Our team is dedicated to ensuring every visit
+                  is exceptional, whether you are joining us for a quick lunch, a romantic
                   dinner, or a celebration with friends and family.
                 </p>
               </div>
@@ -88,7 +90,7 @@ export default function AboutPage() {
           <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                title: 'Seasonal & Local',
+                title: 'Heritage & Architecture',
                 description:
                   'We source the finest ingredients from local farmers and producers, ensuring every dish reflects the best of each season.',
               },

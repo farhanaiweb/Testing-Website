@@ -6,7 +6,7 @@ import { menuCategories } from '@/lib/data'
 export const metadata: Metadata = {
   title: 'Menu',
   description:
-    'Explore our seasonal menu featuring locally sourced ingredients, craft cocktails, and chef-driven dishes that change with the seasons.',
+    'Explore authentic Lahori cuisine at Haveli Restaurant, located in the historic Haveli Khalil Khan on Fort Road Food Street, Lahore.',
 }
 
 export default function MenuPage() {
@@ -27,7 +27,7 @@ export default function MenuPage() {
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-gold-400">
             Our Menu
           </p>
-          <h1 className="heading-xl text-cream-50">Seasonal &amp; Local</h1>
+          <h1 className="heading-xl text-cream-50">Authentic Lahori Cuisine</h1>
           <p className="mx-auto mt-4 max-w-xl text-body">
             Our menu evolves with the seasons, celebrating the finest ingredients from local
             farmers and artisans.

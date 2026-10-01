@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/_next/'],
     },
-    sitemap: 'https://example.com/sitemap.xml',
+    sitemap: 'https://www.haveli.com.pk/sitemap.xml',
   }
 }

@@ -19,19 +19,19 @@ export default function Hero() {
       <div className="container-wide relative z-10 text-center">
         <div className="animate-fade-in-down">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-gold-400 sm:text-base">
-            Est. 2024
+            Fort Road Food Street
           </p>
         </div>
 
         <h1 className="heading-xl animate-fade-in-up text-cream-50 sm:text-6xl lg:text-7xl" style={{ animationDelay: '200ms' }}>
-          Where Every Meal
+          Lahore's Iconic
           <br />
-          <span className="text-gold-400">Becomes a Memory</span>
+          <span className="text-gold-400">Heritage Dining</span>
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl animate-fade-in-up text-body sm:text-lg" style={{ animationDelay: '400ms' }}>
-          Seasonal ingredients, bold flavors, and an atmosphere that invites you to linger.
-          Experience dining that engages all your senses.
+          Experience the grandeur of Mughal-era architecture while savoring authentic Lahori cuisine
+          in the heart of Lahore's historic Walled City.
         </p>
 
         <div className="mt-10 flex animate-fade-in-up flex-col items-center justify-center gap-4 sm:flex-row" style={{ animationDelay: '600ms' }}>

@@ -36,40 +36,41 @@ export default function AboutPreview() {
           <div>
             <SectionHeading
               align="left"
-              eyebrow="Our Story"
-              title="A Passion for Flavor & Hospitality"
+              eyebrow="Our Heritage"
+              title="A Historic Haveli in Lahore's Walled City"
             />
             <div className="mt-6 space-y-4 text-body">
               <p>
-                Founded with a simple belief — that dining is more than sustenance, it is an
-                experience to be savored. Our chef-driven menu celebrates the finest seasonal
-                ingredients, sourced from local farmers and artisans who share our commitment
-                to quality.
+                Haveli Restaurant is located in the historic Haveli Khalil Khan on Fort Road
+                Food Street in Lahore's Walled City. The haveli features wooden balconies
+                and jharokas, hand-carved doors and windows, wrought iron railings, and
+                handmade tiles — a unique representation of Lahore's rich heritage.
               </p>
               <p>
-                Every dish tells a story. From the careful selection of ingredients to the
-                artful presentation on your plate, we strive to create moments that bring
-                people together and linger in memory long after the last bite.
+                When the Punjab government announced its intention to develop a Food Street
+                on Fort Road in 2010, Habib Khan voluntarily assisted in the project execution,
+                helping deliver a dining experience that celebrates Lahore's culinary and
+                architectural heritage.
               </p>
             </div>
 
             <div className="mt-8 grid grid-cols-3 gap-6 border-t border-cream-100/10 pt-8">
               <div>
-                <p className="font-serif text-3xl text-gold-400 sm:text-4xl">10+</p>
+                <p className="font-serif text-3xl text-gold-400 sm:text-4xl">2010</p>
                 <p className="mt-1 text-xs uppercase tracking-widest text-cream-100/60">
-                  Years Experience
+                  Food Street Established
                 </p>
               </div>
               <div>
-                <p className="font-serif text-3xl text-gold-400 sm:text-4xl">50+</p>
+                <p className="font-serif text-3xl text-gold-400 sm:text-4xl">1</p>
                 <p className="mt-1 text-xs uppercase tracking-widest text-cream-100/60">
-                  Seasonal Dishes
+                  Historic Haveli
                 </p>
               </div>
               <div>
-                <p className="font-serif text-3xl text-gold-400 sm:text-4xl">100%</p>
+                <p className="font-serif text-3xl text-gold-400 sm:text-4xl">3</p>
                 <p className="mt-1 text-xs uppercase tracking-widest text-cream-100/60">
-                  Local Sourcing
+                  Iconic Landmarks Nearby
                 </p>
               </div>
             </div>

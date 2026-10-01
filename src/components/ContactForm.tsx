@@ -176,7 +176,7 @@ export default function ContactForm() {
             className={`w-full rounded-sm border bg-charcoal-900/50 px-4 py-3 text-cream-50 placeholder-cream-100/30 transition-colors focus:outline-none focus:ring-2 focus:ring-gold-400 ${
               errors.phone ? 'border-red-500' : 'border-cream-100/20 focus:border-gold-500'
             }`}
-            placeholder="(555) 123-4567"
+            placeholder="+92 321 465 1051"
             aria-invalid={!!errors.phone}
             aria-describedby={errors.phone ? 'phone-error' : undefined}
           />

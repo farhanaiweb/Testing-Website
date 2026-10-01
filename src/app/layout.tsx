@@ -17,25 +17,28 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://example.com'),
+  metadataBase: new URL('https://www.haveli.com.pk'),
   title: {
-    default: 'SAVOR & CO. | Modern Dining Experience',
-    template: '%s | SAVOR & CO.',
+    default: 'Haveli Restaurant | Heritage Dining in Lahore',
+    template: '%s | Haveli Restaurant',
   },
   description:
-    'Experience modern dining at SAVOR & CO. Seasonal menus, craft cocktails, and an unforgettable atmosphere. Reserve your table today.',
+    "Lahore's premier heritage dining destination — where Mughal grandeur meets unforgettable hospitality. Located on Fort Road Food Street.",
   keywords: [
-    'restaurant',
-    'fine dining',
-    'modern cuisine',
-    'seasonal menu',
-    'craft cocktails',
-    'reserve table',
+    'Haveli Restaurant',
+    'Lahore',
+    'heritage dining',
+    'Food Street',
+    'Fort Road',
+    'Walled City',
+    'Badshahi Mosque',
+    'Lahori cuisine',
+    'Pakistan',
   ],
   openGraph: {
-    title: 'SAVOR & CO. | Modern Dining Experience',
+    title: 'Haveli Restaurant | Heritage Dining in Lahore',
     description:
-      'Experience modern dining at SAVOR & CO. Seasonal menus, craft cocktails, and an unforgettable atmosphere.',
+      "Lahore's premier heritage dining destination — where Mughal grandeur meets unforgettable hospitality.",
     type: 'website',
     locale: 'en_US',
   },

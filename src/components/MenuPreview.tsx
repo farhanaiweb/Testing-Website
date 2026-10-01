@@ -11,7 +11,7 @@ export default function MenuPreview() {
       <div className="container-wide">
         <SectionHeading
           eyebrow="Our Menu"
-          title="Crafted with Seasonal Ingredients"
+          title="Authentic Lahori Cuisine"
           description="Our menu changes with the seasons, ensuring every dish features the freshest ingredients at their peak."
         />
 

@@ -1,20 +1,19 @@
 export const restaurantInfo = {
-  name: 'SAVOR & CO.',
-  tagline: 'Modern Dining Experience',
+  name: 'Haveli Restaurant',
+  tagline: "Lahore's Iconic Heritage",
   description:
-    'A modern restaurant celebrating seasonal ingredients, bold flavors, and the art of gathering.',
-  phone: '(555) 123-4567',
-  email: 'reservations@savorandco.com',
+    "Lahore's premier heritage dining destination — where Mughal grandeur meets unforgettable hospitality.",
+  phone: '+92 321 465 1051',
+  email: 'info@haveli.com.pk',
   address: {
-    street: '123 Main Street',
-    city: 'Your City',
-    state: 'ST',
-    zip: '12345',
+    street: '2170-A, Food Street, Fort Road',
+    city: 'Lahore',
+    state: 'Punjab',
+    zip: 'Pakistan',
   },
   hours: [
-    { days: 'Monday – Thursday', time: '5:00 PM – 10:00 PM' },
-    { days: 'Friday – Saturday', time: '5:00 PM – 11:00 PM' },
-    { days: 'Sunday', time: '4:00 PM – 9:00 PM' },
+    { days: 'Monday – Thursday', time: '10:00 AM – 1:00 AM' },
+    { days: 'Friday – Sunday', time: '10:00 AM – 2:00 AM' },
   ],
   social: {
     instagram: '#',

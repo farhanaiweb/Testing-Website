@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Terms & Conditions',
-  description: 'Terms and Conditions for SAVOR & CO. website.',
+  description: 'Terms and Conditions for Haveli Restaurant website.',
 }
 
 export default function TermsPage() {
@@ -44,7 +44,7 @@ export default function TermsPage() {
             <h2 className="font-serif text-xl text-cream-50">Intellectual Property</h2>
             <p className="mt-3">
               All content on this website, including text, graphics, logos, images, and software,
-              is the property of SAVOR & CO. and is protected by copyright, trademark, and other
+              is the property of Haveli Restaurant and is protected by copyright, trademark, and other
               intellectual property laws. You may not reproduce, distribute, or create derivative
               works from any content without our express written permission.
             </p>
@@ -53,7 +53,7 @@ export default function TermsPage() {
           <div>
             <h2 className="font-serif text-xl text-cream-50">Limitation of Liability</h2>
             <p className="mt-3">
-              SAVOR & CO. shall not be liable for any indirect, incidental, special, consequential,
+              Haveli Restaurant shall not be liable for any indirect, incidental, special, consequential,
               or punitive damages resulting from your use of or inability to use our services or
               this website.
             </p>
@@ -72,8 +72,8 @@ export default function TermsPage() {
             <h2 className="font-serif text-xl text-cream-50">Contact</h2>
             <p className="mt-3">
               For questions about these Terms &amp; Conditions, please contact us at{' '}
-              <a href="mailto:legal@savorandco.com" className="text-gold-400 hover:underline">
-                legal@savorandco.com
+              <a href="mailto:info@haveli.com.pk" className="text-gold-400 hover:underline">
+                info@haveli.com.pk
               </a>
               .
             </p>
