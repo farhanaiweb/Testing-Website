@@ -3,16 +3,15 @@ import Link from 'next/link'
 export default function CTASection() {
   return (
     <section className="section-padding relative overflow-hidden bg-charcoal-900">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div
-          className="h-full w-full"
-          style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(220, 38, 38, 0.5) 1px, transparent 0)`,
-            backgroundSize: '40px 40px',
-          }}
-        />
-      </div>
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: `url('/images/cta-background.png')`,
+        }}
+      />
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-charcoal-950/70" />
 
       <div className="container-narrow relative z-10 text-center">
         <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-red-500">

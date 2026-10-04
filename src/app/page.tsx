@@ -1,8 +1,6 @@
 import type { Metadata } from 'next'
 import Hero from '@/components/Hero'
 import AboutPreview from '@/components/AboutPreview'
-import MenuPreview from '@/components/MenuPreview'
-import Gallery from '@/components/Gallery'
 import Testimonials from '@/components/Testimonials'
 import FAQ from '@/components/FAQ'
 import CTASection from '@/components/CTASection'
@@ -18,8 +16,6 @@ export default function HomePage() {
     <>
       <Hero />
       <AboutPreview />
-      <MenuPreview />
-      <Gallery />
       <Testimonials />
       <FAQ />
       <CTASection />

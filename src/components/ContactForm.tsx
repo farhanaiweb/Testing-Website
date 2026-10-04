@@ -70,11 +70,27 @@ export default function ContactForm() {
 
     setIsSubmitting(true)
 
-    // Simulate form submission - replace with actual API endpoint
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+    try {
+      const res = await fetch('/api/reservations', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
 
-    setIsSubmitting(false)
-    setIsSubmitted(true)
+      if (!res.ok) {
+        const errData = await res.json()
+        alert(errData.error || 'Something went wrong. Please try again.')
+        setIsSubmitting(false)
+        return
+      }
+
+      setIsSubmitted(true)
+      setFormData({ name: '', email: '', phone: '', date: '', guests: '', message: '' })
+    } catch {
+      alert('Network error. Please check your connection and try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (field: keyof FormData, value: string) => {

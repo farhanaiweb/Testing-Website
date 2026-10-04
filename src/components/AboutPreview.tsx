@@ -11,7 +11,7 @@ export default function AboutPreview() {
               <div className="space-y-4">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/haveli-1.jpg"
+                  src="/images/heritage-1.jpg"
                   alt="Haveli Restaurant interior with warm ambient lighting"
                   className="aspect-[3/4] w-full rounded-sm object-cover"
                   loading="lazy"
@@ -20,7 +20,7 @@ export default function AboutPreview() {
               <div className="space-y-4 pt-8">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/haveli-2.jpg"
+                  src="/images/heritage-2.jpg"
                   alt="Chef preparing a dish in the kitchen"
                   className="aspect-[3/4] w-full rounded-sm object-cover"
                   loading="lazy"

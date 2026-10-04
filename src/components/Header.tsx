@@ -31,8 +31,23 @@ export default function Header() {
       }`}
     >
       <div className="container-wide">
-        <nav className="flex items-center justify-between py-4 sm:py-5" aria-label="Main navigation">
-          {/* Navigation Links - Left Side */}
+        <nav className="grid grid-cols-[1fr_auto_1fr] items-center py-4 sm:py-5" aria-label="Main navigation">
+          {/* Logo - Left Side */}
+          <div className="justify-self-start">
+            <Link href="/" className="flex items-center gap-3">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/logo.webp"
+                alt="Haveli Restaurant Logo"
+                className="h-10 w-auto sm:h-12"
+              />
+              <span className="font-serif text-xl tracking-wider text-cream-50 transition-colors hover:text-red-400 sm:text-2xl">
+                {restaurantInfo.name}
+              </span>
+            </Link>
+          </div>
+
+          {/* Navigation Links - Center */}
           <ul className="hidden items-center gap-8 md:flex lg:gap-12">
             {navLinks.map((link) => (
               <li key={link.href}>
@@ -50,21 +65,8 @@ export default function Header() {
             ))}
           </ul>
 
-          {/* Logo - Right Side */}
-          <Link href="/" className="flex items-center gap-3">
-            <span className="font-serif text-xl tracking-wider text-cream-50 transition-colors hover:text-red-400 sm:text-2xl">
-              {restaurantInfo.name}
-            </span>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/logo.webp"
-              alt="Haveli Restaurant Logo"
-              className="h-10 w-auto sm:h-12"
-            />
-          </Link>
-
-          {/* Reserve Button - Desktop */}
-          <div className="hidden md:block">
+          {/* Reserve Button - Right Side */}
+          <div className="justify-self-end hidden md:block">
             <Link href="/contact" className="btn-primary !px-6 !py-3 !text-xs">
               Reserve
             </Link>
